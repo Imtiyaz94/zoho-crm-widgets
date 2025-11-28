@@ -1608,6 +1608,8 @@
       };
 
       try {
+        console.log("args", args);
+        
         const resp = await ZOHO.CRM.FUNCTIONS.execute("emailsendfunction", { arguments: JSON.stringify(args) });
         ensureFunctionSuccess(resp, "emailsendfunction");
         log("emailsendfunction response", resp);
