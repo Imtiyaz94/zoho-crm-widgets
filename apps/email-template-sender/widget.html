@@ -1410,7 +1410,7 @@
               if (key === "is_master") return;
               // ... (existing logic)
               const val = record[key];
-              if (val === "" || (Array.isArray(val) && val.length === 0)) return;
+              if (Array.isArray(val) && val.length === 0) return;
 
               const label = key.replace(/_/g, " ");
               const valuesArray = Array.isArray(val) ? val : [val];
