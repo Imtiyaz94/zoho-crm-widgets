@@ -759,6 +759,7 @@
         const hasQuestions = addedQuestions.length > 0;
         const hasLead = Boolean(currentLeadId);
 
+        const canAct = hasLead && (hasTemplate || hasQuestions);
         // Mutually exclusive usage (unchanged)
         formTitleInput.disabled = hasTemplate;
         additionalQuestionInput.disabled = hasTemplate;
