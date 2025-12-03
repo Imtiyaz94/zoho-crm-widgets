@@ -1705,7 +1705,8 @@
 
         const args = {
           leadId,
-          emailTemplateId: selectEl.value
+          emailTemplateId: selectEl.value,
+          generateLink: mode === "generate"
         };
 
         if (formPayload) {
